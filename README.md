@@ -8,6 +8,8 @@ __Optimization for FlatLists. This is a fix over the FlatList that removed every
 Please also read more about the issue here:
 https://github.com/facebook/react-native/issues/13413
 
+Fork from https://github.com/stoffern/react-native-optimized-flatlist
+
 ## Installation
 ```
 npm i -S react-native-optimized-flatlist

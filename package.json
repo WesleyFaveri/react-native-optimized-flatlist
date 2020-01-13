@@ -1,6 +1,6 @@
 {
-  "name": "react-native-optimized-flatlist",
-  "version": "0.0.0-development",
+  "name": "react-native-optimized-list",
+  "version": "1.0.0",
   "description": "Optimization for complex and slow React Native FlatLists",
   "main": "src/index.js",
   "scripts": {
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoffern/react-native-optimized-flatlist.git"
+    "url": "https://github.com/WesleyFaveri/react-native-optimized-flatlist.git"
   },
   "keywords": [
     "react-native",
     "flatlist"
   ],
-  "author": "stoffern",
+  "author": "WesleyFaveri",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stoffern/react-native-optimized-flatlist/issues"
+    "url": "https://github.com/WesleyFaveri/react-native-optimized-flatlist/issues"
   },
-  "homepage": "https://github.com/stoffern/react-native-optimized-flatlist#readme",
+  "homepage": "https://github.com/WesleyFaveri/react-native-optimized-flatlist#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
     "semantic-release": "^15.0.0"
