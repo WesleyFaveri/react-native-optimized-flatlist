@@ -40,6 +40,7 @@ export default class OptimizedFlatList extends React.PureComponent {
         ref={ myItem => this._addRowRefs(myItem, data)}
         viewComponent={view}
         data={data}
+        defaultRender={this.props.viewDefault}
       />
     )
   }

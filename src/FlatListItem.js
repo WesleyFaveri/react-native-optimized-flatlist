@@ -1,5 +1,5 @@
 import React from 'react'
-import { 
+import {
   View,
 } from 'react-native'
 import PropTypes from 'prop-types'
@@ -34,8 +34,14 @@ export default class FlatListItem extends React.PureComponent {
   }
 
   render() {
+    const { defaultRender } = this.props;
+
     if (this.state.visibility === false) {
-      return ( <View style={{ width: this.viewProperties.width, height: this.viewProperties.height }} /> )
+      return (
+        <View style={{ width: this.viewProperties.width, height: this.viewProperties.height }}>
+          {defaultRender}
+        </View>
+      );
     }
 
     return (
