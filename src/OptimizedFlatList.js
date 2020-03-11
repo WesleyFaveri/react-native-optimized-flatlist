@@ -26,11 +26,19 @@ export default class OptimizedFlatList extends React.PureComponent {
   }
 
   _updateItem(index, visibility){
-        if (!this.rowRefs[index].ref) {
+    const { isSearching } = this.props;
+
+    if (!this.rowRefs[index].ref) {
       return false;
     }
-    this.rowRefs[index].ref.setVisibility(visibility)
-    return visibility
+
+    if (isSearching) {
+      this.rowRefs[index].ref.setVisibility(true)
+      return true;
+    } else {
+      this.rowRefs[index].ref.setVisibility(visibility)
+      return visibility
+    }
   }
 
   _renderItem(data){
