@@ -34,12 +34,12 @@ export default class FlatListItem extends React.PureComponent {
   }
 
   render() {
-    const { defaultRender } = this.props;
+    const { defaultRender, data } = this.props;
 
     if (this.state.visibility === false) {
       return (
         <View style={{ width: this.viewProperties.width, height: this.viewProperties.height }}>
-          {defaultRender}
+          {data.item.type === 'section' ? <></> : defaultRender}
         </View>
       );
     }
